@@ -22,9 +22,9 @@ public class StatementPrinter {
      * @throws RuntimeException if one of the play types is not known
      */
     public String statement() {
-        int totalAmount = getTotalAmount();
-        int volumeCredits = getTotalVolumeCredits();
-        StringBuilder result = new StringBuilder("Statement for " + invoice.getCustomer()
+        final int totalAmount = getTotalAmount();
+        final int volumeCredits = getTotalVolumeCredits();
+        final StringBuilder result = new StringBuilder("Statement for " + invoice.getCustomer()
                 + System.lineSeparator());
 
         for (Performance p : invoice.getPerformances()) {
@@ -41,7 +41,7 @@ public class StatementPrinter {
 
     private int getAmount(Performance performance) {
         int result = 0;
-        Play play = getPlay(performance);
+        final Play play = getPlay(performance);
         switch (play.getType()) {
             case "tragedy":
                 result = Constants.TRAGEDY_BASE_AMOUNT;
@@ -70,7 +70,7 @@ public class StatementPrinter {
     }
 
     private String usd(int amount) {
-        NumberFormat currency = NumberFormat.getCurrencyInstance(Locale.US);
+        final NumberFormat currency = NumberFormat.getCurrencyInstance(Locale.US);
         return currency.format(amount / (double) Constants.PERCENT_FACTOR);
     }
 

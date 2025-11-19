@@ -1,4 +1,4 @@
-6e43e6b Task 2.1: Extract amount calculation
+500790b Task 2.1: Extract amount calculation
 13c7b1d Task 1.2: Update log
 458a121 Task 1.1: Fix CheckStyle issues
 2b4f164 fixed tests for the not-for-credit tasks; parameter ordering and ensuring consistent line endings.

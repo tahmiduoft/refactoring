@@ -1,4 +1,4 @@
-6cab92c Task 2.4: Address CheckStyle
+a0a30ff Task 2.4: Address CheckStyle
 4573d19 finished TODOs
 01ce799 Task 2.4: Extract total calculations
 9f7ed6e Task 2.3: Introduce usd helper
